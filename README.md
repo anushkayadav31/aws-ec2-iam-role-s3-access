@@ -198,49 +198,50 @@ The IAM role allowed the EC2 instance to access S3 according to the permissions 
 
 ---
 
-## 📸 Screenshots
 
-1. S3 Bucket
+## 📸 Project Preview
 
-Created a private S3 bucket and uploaded the test object.
+### 1. S3 Bucket
 
-Screenshot: 01-s3-bucket.png
+Created the S3 bucket and uploaded the test object.
 
-2. IAM Role
+![S3 Bucket](Screenshots%201/01-s3-bucket.png)
+
+### 2. IAM Role
 
 Created the EC2-S3-ReadOnly-Role for EC2 access.
 
-Screenshot: 02-iam-role.png
+![IAM Role](Screenshots%201/02-iam-role.png)
 
-3. EC2 as Trusted Entity
+### 3. EC2 as Trusted Entity
 
 Configured EC2 as the trusted entity for the IAM role.
 
-Screenshot: 03-ec2-trusted-entity.png
+![EC2 as Trusted Entity](Screenshots%201/03-ec2-trusted-entity.png)
 
-4. S3 Read-Only Policy
+### 4. S3 Read-Only Policy
 
 Attached the AWS-managed AmazonS3ReadOnlyAccess policy.
 
-Screenshot: 04-s3-read-only-policy.png
+![S3 Read-Only Policy](Screenshots%201/04-s3-read-only-policy.png)
 
-5. IAM Role Attached to EC2
+### 5. IAM Role Attached to EC2
 
 Attached the IAM role to the EC2 instance.
 
-Screenshot: 05-ec2-with-iam-role.png
+![EC2 with IAM Role](Screenshots%201/05-ec2-with-iam-role.png)
 
-6. IAM Verification & S3 Access
+### 6. IAM Verification & S3 Access
 
 Verified the IAM identity, listed the S3 bucket, and downloaded the test object.
 
-Screenshot: 06-ec2-s3-access-verification.png
+![IAM Verification and S3 Access](Screenshots%201/06-ec2-s3-access-verification.png)
 
-7. Access Denied Test
+### 7. Access Denied Test
 
 Verified that write access was denied by the read-only policy.
 
-Screenshot: 07-access-denied.png
+![Access Denied Test](Screenshots%201/07-access-denied.png)
 
 
 
